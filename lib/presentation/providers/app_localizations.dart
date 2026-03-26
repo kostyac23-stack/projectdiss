@@ -1,0 +1,418 @@
+import 'package:flutter/material.dart';
+
+class AppLocalizations {
+  final Locale locale;
+
+  AppLocalizations(this.locale);
+
+  static AppLocalizations? of(BuildContext context) {
+    return Localizations.of<AppLocalizations>(context, AppLocalizations);
+  }
+
+  static const LocalizationsDelegate<AppLocalizations> delegate = _AppLocalizationsDelegate();
+
+  static final Map<String, Map<String, String>> _localizedValues = {
+    'en': {
+      // Bottom Navigation
+      'discovery': 'Discovery',
+      'requests': 'Requests',
+      'orders': 'Orders',
+      'profile': 'Profile',
+      'settings': 'Settings',
+      'dashboard': 'Dashboard',
+      'portfolio': 'Portfolio',
+      'schedule': 'Schedule',
+      'favorites': 'Favorites',
+
+      // Settings Screen
+      'language': 'Language',
+      'language_set': 'Language set to',
+      'font_size': 'Font Size',
+      'support': 'Support',
+      'account': 'Account',
+      'edit_profile': 'Edit Profile',
+      'update_personal_info': 'Update your personal information',
+      'change_password': 'Change Password',
+      'update_password': 'Update your account password',
+      'verification_center': 'Verification Center',
+      'apply_verified_badge': 'Apply for the verified badge',
+      'two_factor_auth': 'Two-Factor Auth',
+      'add_extra_security': 'Add extra security to your account',
+      'notifications': 'Notifications',
+      'push_notifications': 'Push Notifications',
+      'receive_push': 'Receive push notifications',
+      'email_notifications': 'Email Notifications',
+      'get_email_updates': 'Get email updates',
+      'order_updates': 'Order Updates',
+      'order_status_notif': 'Notifications about order status',
+      'promotions': 'Promotions',
+      'special_offers': 'Special offers and discounts',
+      'privacy': 'Privacy',
+      'online_status': 'Online Status',
+      'show_when_active': "Show when you're active",
+      'show_phone': 'Show Phone Number',
+      'display_phone': 'Display your phone on profile',
+      'show_email': 'Show Email',
+      'display_email': 'Display your email on profile',
+      'appearance': 'Appearance',
+      'dark_mode': 'Dark Mode',
+      'switch_dark_theme': 'Switch to dark theme',
+      'help_center': 'Help Center',
+      'faqs_guides': 'FAQs and guides',
+      'contact_support': 'Contact Support',
+      'get_help': 'Get help from our team',
+      'report_bug': 'Report a Bug',
+      'help_improve': 'Help us improve',
+      'danger_zone': 'Danger Zone',
+      'logout': 'Logout',
+      'sign_out': 'Sign out of your account',
+      'delete_account': 'Delete Account',
+      'permanently_delete': 'Permanently delete your account',
+      'dev_tools': 'Developer Tools',
+      'debug_tools': 'Testing and debug tools',
+      'specialist': 'Specialist',
+      'client': 'Client',
+
+      // Login Screen
+      'welcome_back': 'Welcome Back',
+      'sign_in_continue': 'Sign in to continue',
+      'email_address': 'Email Address',
+      'password': 'Password',
+      'sign_in': 'Sign In',
+      'no_account': "Don't have an account? ",
+      'register': 'Register',
+      'find_professional': 'Find your perfect professional',
+      'enter_email': 'Please enter your email',
+      'enter_password': 'Please enter your password',
+      'invalid_credentials': 'Invalid email or password',
+
+      // Onboarding
+      'welcome_skillsmatch': 'Welcome to SkillsMatch',
+      'welcome_desc': 'Discover and connect with top professionals using our intelligent matching algorithms.',
+      'smart_matching': 'Smart Matching',
+      'smart_desc': 'Our MCDA algorithm evaluates specialists across 5 dimensions to find your perfect match.',
+      'offline_private': 'Offline & Private',
+      'offline_desc': 'All data stays on your device. No cloud. No tracking. Your privacy is fully protected.',
+      'skip': 'Skip',
+      'next': 'Next',
+      'get_started': 'Get Started',
+
+      // Orders
+      'my_orders': 'My Orders',
+      'all': 'All',
+      'pending': 'Pending',
+      'accepted': 'Accepted',
+      'in_progress': 'In Progress',
+      'completed': 'Completed',
+      'cancelled': 'Cancelled',
+      'no_orders': 'No orders yet',
+      'no_orders_desc': 'Your orders will appear here',
+      'create_order': 'Create Order',
+      'post_request': 'Post Request',
+      'order_details': 'Order Details',
+
+      // Discovery
+      'search_specialists': 'Search specialists...',
+      'no_specialists': 'No specialists found',
+      'adjust_filters': 'Try adjusting your filters',
+      'filters': 'Filters',
+      'map_view': 'Map View',
+      'cost_estimator': 'Cost Estimator',
+      'compare': 'Compare',
+      'exit_compare': 'Exit Compare',
+      'retry': 'Retry',
+
+      // Common
+      'cancel': 'Cancel',
+      'save': 'Save',
+      'delete': 'Delete',
+      'confirm': 'Confirm',
+      'done': 'Done',
+      'loading': 'Loading...',
+      'error': 'Error',
+      'success': 'Success',
+      'yes': 'Yes',
+      'no': 'No',
+      'ok': 'OK',
+      'close': 'Close',
+      'back': 'Back',
+      'are_you_sure': 'Are you sure?',
+    },
+    'ru': {
+      // Bottom Navigation
+      'discovery': 'Поиск',
+      'requests': 'Заявки',
+      'orders': 'Заказы',
+      'profile': 'Профиль',
+      'settings': 'Настройки',
+      'dashboard': 'Панель',
+      'portfolio': 'Портфолио',
+      'schedule': 'Расписание',
+      'favorites': 'Избранные',
+
+      // Settings Screen
+      'language': 'Язык',
+      'language_set': 'Язык изменён на',
+      'font_size': 'Размер шрифта',
+      'support': 'Поддержка',
+      'account': 'Аккаунт',
+      'edit_profile': 'Редактировать профиль',
+      'update_personal_info': 'Обновите личную информацию',
+      'change_password': 'Сменить пароль',
+      'update_password': 'Обновите пароль аккаунта',
+      'verification_center': 'Центр верификации',
+      'apply_verified_badge': 'Подать заявку на значок',
+      'two_factor_auth': 'Двухфакторная аутент.',
+      'add_extra_security': 'Дополнительная защита',
+      'notifications': 'Уведомления',
+      'push_notifications': 'Push-уведомления',
+      'receive_push': 'Получать push-уведомления',
+      'email_notifications': 'Email-уведомления',
+      'get_email_updates': 'Получать обновления по email',
+      'order_updates': 'Обновления заказов',
+      'order_status_notif': 'Уведомления о статусе заказа',
+      'promotions': 'Акции',
+      'special_offers': 'Скидки и спецпредложения',
+      'privacy': 'Конфиденциальность',
+      'online_status': 'Статус онлайн',
+      'show_when_active': 'Показывать когда вы активны',
+      'show_phone': 'Показать номер телефона',
+      'display_phone': 'Отображать телефон в профиле',
+      'show_email': 'Показать email',
+      'display_email': 'Отображать email в профиле',
+      'appearance': 'Внешний вид',
+      'dark_mode': 'Тёмная тема',
+      'switch_dark_theme': 'Переключить на тёмную тему',
+      'help_center': 'Центр помощи',
+      'faqs_guides': 'FAQ и инструкции',
+      'contact_support': 'Связаться с поддержкой',
+      'get_help': 'Получить помощь от команды',
+      'report_bug': 'Сообщить об ошибке',
+      'help_improve': 'Помогите нам стать лучше',
+      'danger_zone': 'Опасная зона',
+      'logout': 'Выйти',
+      'sign_out': 'Выйти из аккаунта',
+      'delete_account': 'Удалить аккаунт',
+      'permanently_delete': 'Permanently delete your account',
+      'dev_tools': 'Инструменты разработчика',
+      'debug_tools': 'Тестирование и отладка',
+      'specialist': 'Специалист',
+      'client': 'Клиент',
+
+      // Login Screen
+      'welcome_back': 'С возвращением',
+      'sign_in_continue': 'Войдите чтобы продолжить',
+      'email_address': 'Электронная почта',
+      'password': 'Пароль',
+      'sign_in': 'Войти',
+      'no_account': 'Нет аккаунта? ',
+      'register': 'Регистрация',
+      'find_professional': 'Найдите идеального специалиста',
+      'enter_email': 'Введите email',
+      'enter_password': 'Введите пароль',
+      'invalid_credentials': 'Неверный email или пароль',
+
+      // Onboarding
+      'welcome_skillsmatch': 'Добро пожаловать в SkillsMatch',
+      'welcome_desc': 'Находите и связывайтесь с лучшими специалистами с помощью интеллектуальных алгоритмов.',
+      'smart_matching': 'Умный подбор',
+      'smart_desc': 'Наш алгоритм MCDA оценивает специалистов по 5 критериям для идеального подбора.',
+      'offline_private': 'Офлайн и приватно',
+      'offline_desc': 'Все данные хранятся на вашем устройстве. Без облака. Без отслеживания.',
+      'skip': 'Пропустить',
+      'next': 'Далее',
+      'get_started': 'Начать',
+
+      // Orders
+      'my_orders': 'Мои заказы',
+      'all': 'Все',
+      'pending': 'Ожидание',
+      'accepted': 'Принято',
+      'in_progress': 'В работе',
+      'completed': 'Выполнено',
+      'cancelled': 'Отменено',
+      'no_orders': 'Заказов пока нет',
+      'no_orders_desc': 'Ваши заказы появятся здесь',
+      'create_order': 'Создать заказ',
+      'post_request': 'Оставить заявку',
+      'order_details': 'Детали заказа',
+
+      // Discovery
+      'search_specialists': 'Поиск специалистов...',
+      'no_specialists': 'Специалисты не найдены',
+      'adjust_filters': 'Попробуйте изменить фильтры',
+      'filters': 'Фильтры',
+      'map_view': 'Карта',
+      'cost_estimator': 'Калькулятор',
+      'compare': 'Сравнить',
+      'exit_compare': 'Выход из сравнения',
+      'retry': 'Повторить',
+
+      // Common
+      'cancel': 'Отмена',
+      'save': 'Сохранить',
+      'delete': 'Удалить',
+      'confirm': 'Подтвердить',
+      'done': 'Готово',
+      'loading': 'Загрузка...',
+      'error': 'Ошибка',
+      'success': 'Успех',
+      'yes': 'Да',
+      'no': 'Нет',
+      'ok': 'ОК',
+      'close': 'Закрыть',
+      'back': 'Назад',
+      'are_you_sure': 'Вы уверены?',
+    },
+    'uz': {
+      // Bottom Navigation
+      'discovery': 'Qidiruv',
+      'requests': 'Arizalar',
+      'orders': 'Buyurtmalar',
+      'profile': 'Profil',
+      'settings': 'Sozlamalar',
+      'dashboard': 'Boshqaruv',
+      'portfolio': 'Portfolio',
+      'schedule': 'Jadval',
+      'favorites': 'Sevimlilar',
+
+      // Settings Screen
+      'language': 'Til',
+      'language_set': 'Til o\'zgardi',
+      'font_size': 'Shrift o\'lchami',
+      'support': 'Qo\'llab-quvvatlash',
+      'account': 'Hisob',
+      'edit_profile': 'Profilni tahrirlash',
+      'update_personal_info': 'Shaxsiy ma\'lumotlarni yangilash',
+      'change_password': 'Parolni o\'zgartirish',
+      'update_password': 'Hisob parolini yangilang',
+      'verification_center': 'Tasdiqlash markazi',
+      'apply_verified_badge': 'Tasdiqlash uchun ariza',
+      'two_factor_auth': 'Ikki bosqichli himoya',
+      'add_extra_security': 'Qo\'shimcha xavfsizlik',
+      'notifications': 'Bildirishnomalar',
+      'push_notifications': 'Push-bildirishnomalar',
+      'receive_push': 'Push-bildirishnomalar olish',
+      'email_notifications': 'Email-bildirishnomalar',
+      'get_email_updates': 'Emaildan yangiliklar olish',
+      'order_updates': 'Buyurtma yangilanishlari',
+      'order_status_notif': 'Buyurtma holati haqida',
+      'promotions': 'Aksiyalar',
+      'special_offers': 'Chegirmalar va takliflar',
+      'privacy': 'Maxfiylik',
+      'online_status': 'Onlayn holati',
+      'show_when_active': 'Faolligingiz ko\'rsatilsin',
+      'show_phone': 'Telefon raqamini ko\'rsatish',
+      'display_phone': 'Profilda telefon ko\'rsatish',
+      'show_email': 'Emailni ko\'rsatish',
+      'display_email': 'Profilda email ko\'rsatish',
+      'appearance': 'Tashqi ko\'rinish',
+      'dark_mode': 'Qorong\'i rejim',
+      'switch_dark_theme': 'Qorong\'i mavzuga o\'tish',
+      'help_center': 'Yordam markazi',
+      'faqs_guides': 'Savollar va qo\'llanmalar',
+      'contact_support': 'Qo\'llab-quvvatlash',
+      'get_help': 'Jamoadan yordam olish',
+      'report_bug': 'Xato haqida xabar berish',
+      'help_improve': 'Yaxshilashga yordam bering',
+      'danger_zone': 'Xavfli zona',
+      'logout': 'Chiqish',
+      'sign_out': 'Hisobdan chiqish',
+      'delete_account': 'Hisobni o\'chirish',
+      'permanently_delete': 'Hisobni butunlay o\'chirish',
+      'dev_tools': 'Dasturchi vositalari',
+      'debug_tools': 'Sinov va tuzatish',
+      'specialist': 'Mutaxassis',
+      'client': 'Mijoz',
+
+      // Login Screen
+      'welcome_back': 'Xush kelibsiz',
+      'sign_in_continue': 'Davom etish uchun kiring',
+      'email_address': 'Elektron pochta',
+      'password': 'Parol',
+      'sign_in': 'Kirish',
+      'no_account': 'Hisobingiz yo\'qmi? ',
+      'register': 'Ro\'yxatdan o\'tish',
+      'find_professional': 'Ideal mutaxassisni toping',
+      'enter_email': 'Emailni kiriting',
+      'enter_password': 'Parolni kiriting',
+      'invalid_credentials': 'Noto\'g\'ri email yoki parol',
+
+      // Onboarding
+      'welcome_skillsmatch': 'SkillsMatch-ga xush kelibsiz',
+      'welcome_desc': 'Aqlli algoritmlar yordamida eng yaxshi mutaxassislarni toping.',
+      'smart_matching': 'Aqlli tanlash',
+      'smart_desc': 'Bizning MCDA algoritmimiz mutaxassislarni 5 ta mezon bo\'yicha baholaydi.',
+      'offline_private': 'Oflayn va xavfsiz',
+      'offline_desc': 'Barcha ma\'lumotlar qurilmangizda saqlanadi. Bulut talab qilinmaydi.',
+      'skip': 'O\'tkazib yuborish',
+      'next': 'Keyingi',
+      'get_started': 'Boshlash',
+
+      // Orders
+      'my_orders': 'Mening buyurtmalarim',
+      'all': 'Barchasi',
+      'pending': 'Kutilmoqda',
+      'accepted': 'Qabul qilindi',
+      'in_progress': 'Bajarilmoqda',
+      'completed': 'Tugallandi',
+      'cancelled': 'Bekor qilindi',
+      'no_orders': 'Hali buyurtmalar yo\'q',
+      'no_orders_desc': 'Buyurtmalaringiz shu yerda paydo bo\'ladi',
+      'create_order': 'Buyurtma yaratish',
+      'post_request': 'Ariza qoldirish',
+      'order_details': 'Buyurtma tafsilotlari',
+
+      // Discovery
+      'search_specialists': 'Mutaxassislarni qidirish...',
+      'no_specialists': 'Mutaxassislar topilmadi',
+      'adjust_filters': 'Filtrlarni o\'zgartirib ko\'ring',
+      'filters': 'Filtrlar',
+      'map_view': 'Xarita',
+      'cost_estimator': 'Kalkulyator',
+      'compare': 'Solishtirish',
+      'exit_compare': 'Solishtirishdan chiqish',
+      'retry': 'Qayta urinish',
+
+      // Common
+      'cancel': 'Bekor',
+      'save': 'Saqlash',
+      'delete': 'O\'chirish',
+      'confirm': 'Tasdiqlash',
+      'done': 'Tayyor',
+      'loading': 'Yuklanmoqda...',
+      'error': 'Xatolik',
+      'success': 'Muvaffaqiyat',
+      'yes': 'Ha',
+      'no': 'Yo\'q',
+      'ok': 'OK',
+      'close': 'Yopish',
+      'back': 'Orqaga',
+      'are_you_sure': 'Ishonchingiz komilmi?',
+    },
+  };
+
+  String t(String key) {
+    return _localizedValues[locale.languageCode]?[key] ?? _localizedValues['en']![key] ?? key;
+  }
+
+  // Keep old method for backward compat
+  String translate(String key) => t(key);
+}
+
+class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
+  const _AppLocalizationsDelegate();
+
+  @override
+  bool isSupported(Locale locale) {
+    return ['en', 'ru', 'uz'].contains(locale.languageCode);
+  }
+
+  @override
+  Future<AppLocalizations> load(Locale locale) async {
+    return AppLocalizations(locale);
+  }
+
+  @override
+  bool shouldReload(_AppLocalizationsDelegate old) => false;
+}
